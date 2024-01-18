@@ -3,7 +3,7 @@ deployment:
   replicaCount: 3
 
 image:
-  repository: artisantek/useraccount:1
+  repository: artisantek/useraccount:version7
   pullPolicy: Always
   containerName: useraccount
   imagePullSecrets: dockerhub
