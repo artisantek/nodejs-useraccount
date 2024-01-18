@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: webapp-svc
 spec:
+  type: NodePort
   ports:
   - port: {{ .Values.service.clusterIPPort }}
     targetPort: {{ .Values.image.containerPort }}
